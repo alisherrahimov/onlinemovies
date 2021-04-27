@@ -25,13 +25,13 @@ router.post("/user/email/register", validation, user_register);
 //user check login
 router.post("/user/login", user_login);
 //send code verify
-router.post("/user/register", validation, email_code_send, email_code_verify);
+router.post("/user/emailcodesend/register", validation, email_code_send, email_code_verify);
 //recovery password send email code
 router.post("/user/password/recovery", recovery_password)
 //recovery code verify
 router.post("/user/email/recovery/code", recovery_code_verify, recovery_password_update)
 //top films
-router.post("/topfilms", top_films)
+router.get("/topfilms", top_films)
 //films search
 router.post("/films/search", films_search)
 

@@ -4,8 +4,8 @@ const type = mongoose.Schema.Types
 const filmsSchema = mongoose.Schema({
     title: {type: type.String, required: true},
     duration: {
-        movie_duration: {type: type.String},
-        trailer_duration: {type: type.String}
+        trailer_duration: {type: type.String, required: true},
+        film_duration: {type: type.String, required: true}
     },
     description: {type: type.String, required: true},
     author: {type: type.String, required: true},

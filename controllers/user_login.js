@@ -4,8 +4,7 @@ import bcrypt from "bcrypt"
 
 const user_login = async (req, res) => {
     const {email, password} = req.body
-    console.log(email + "email")
-    console.log(password + "pass")
+
 
     try {
         if (email && password) {

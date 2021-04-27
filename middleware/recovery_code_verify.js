@@ -5,9 +5,9 @@ const recovery_code_verify = async (req, res, next) => {
     const {email, code} = req.body
 
     try {
-        const user = await recovery_code_model.find({email})[0]
-        if (user) {
-            if (user.code === code && user.email === email) {
+        const user = await recovery_code_model.find({email})
+        if (user.length - 1) {
+            if (user[user.length - 1].code === code && user[user.length - 1].email === email) {
                 req.email = email
                 next()
             } else {
