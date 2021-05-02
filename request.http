@@ -1,7 +1,7 @@
-GET {{local}}/api/films
+GET {{local}}/api/client/films
 
 ####
-POST {{local}}/api/user/register
+POST {{local}}/api/client/user/register
 Content-Type: application/json
 
 {
@@ -12,7 +12,7 @@ Content-Type: application/json
 }
 
 #####
-POST {{local}}/api/user/email/register
+POST {{local}}/api/client/user/email/register
 Content-Type: application/json
 
 {
@@ -24,7 +24,7 @@ Content-Type: application/json
 }
 
 ####
-POST {{local}}/api/user/login
+POST {{local}}/api/client/login
 Content-Type: application/json
 
 {

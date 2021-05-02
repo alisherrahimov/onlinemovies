@@ -1,2 +1,7 @@
 # Project exclude paths
 /node_modules/
+src
+.idea
+yarn.lock
+.gitignore
+test.js
