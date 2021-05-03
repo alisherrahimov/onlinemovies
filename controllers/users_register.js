@@ -9,7 +9,7 @@ const user_register = async (req, res) => {
 
   try {
     const data = await code_and_email.find({ email: email });
-    console.log(data[0].code);
+
     if (data[0].email === email && data[0].code === code) {
       let pass = bcrypt.hashSync(password, 10);
       const user_create = await users_model.create({

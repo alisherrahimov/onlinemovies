@@ -1,4 +1,5 @@
 # onlinemovies
+
 **_Client api_**<br/>
 `api/client/films` bunda hamma filmlarni olish mumkin<br/>
 `api/client/user/email/register` user register qiladi<br/>
@@ -8,5 +9,5 @@
 `api/client/user/email/recovery/code` user emaildagi codeni tekshirish<br/>
 `api/client/topfilms` top filmlarni olish <br/>
 `api/client/films/search` film qidirish  <br/>
-_**Admin api**_
+_**Admin api**_<br/>
 `api/admin/films` barcha filmlarni korish
